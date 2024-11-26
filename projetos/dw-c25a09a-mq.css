@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    /*A12:
+    Telas com até 768px será mostrado o menu hambúguer
+    Telas superiores a 768px será mostrado o menu de opções
+    */
+    span#burguer {
+        display: none;
+        /*A12: O menu hambúguer não será mostrado, mas o menu de opções também não será mostrado.*/
+    }
+
+    menu {
+        display: block;
+        /*O menu de opções agora será mostrado.*/
+    }
+
+    menu > ul > li {
+        display: inline-block;
+        /*A12: Mostra o menu de opções um ao lado do outro*/
+        
+        width: 100px;
+        /*A12:Opcional: altera a largura dos botões de menu de opção*/
+    }
+
+    main {
+        width: 768px;
+        /*A12: Largura fixa em 768px*/
+    }
+
+}
